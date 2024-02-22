@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shengkai.demo.mapper.coursedb.CourseEnrollmentMapper">
+    <select id="selectUserCourseByUserId">
+        SELECT course_id
+        from t_course_enrollment
+        where user_id = #{userId}
+    </select>
+</mapper>

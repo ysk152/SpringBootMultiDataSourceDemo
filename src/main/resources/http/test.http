@@ -1,0 +1,15 @@
+#user_db 单库查询
+GET /user/getUserInformation?userName=张三 HTTP/1.1
+Host: localhost:5088
+
+###
+
+#cource_db 单库查询
+GET /resource/getCourseInformation?title=语文 HTTP/1.1
+Host: localhost:5088
+
+###
+
+#多数据源查询并关联数据
+GET /business/getUserCourse?userName=李四 HTTP/1.1
+Host: localhost:5088
